@@ -1,0 +1,145 @@
+<!--"Great minds discuss ideas; average minds discuss events; small minds discuss people" -Eleanor Roosevelt-->
+<!DOCTYPE html>
+<html>
+<title>Ponder</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel" rel="stylesheet">
+<link href= "ponder.php">
+<!-- <link rel= "stylesheet" href=ponderqa.css> -->
+<style>
+.a{position:absolute; top:150px; text-align: center; color:white;}
+.Center {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  vertical-align: top;
+}
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+</style>
+<body>
+
+
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+      <a href="ponder.htm" class="w3-bar-item w3-button">Ponder</a>
+    <div class="w3-right w3-hide-small">
+      <a href="resources.htm" class="w3-bar-item w3-button">Resources</a>
+      <a href="aboutus.htm" class="w3-bar-item w3-button">About Us</a>
+      <a href="contactus.htm" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+  </div>
+</div>
+<!-- begin wwww.htmlcommentbox.com -->
+<div class= "center">
+  <section>
+    <!--<img class="mySlides" src="tree.jpg"
+    <style="width:100%" "height:100%"> -->
+    <img class="mySlides" src="newponder.jpg"
+    style="width:100%" "height:100%">
+    <img class="mySlides" src="flowers.jpg"
+    style="width:100%" "height:100%">
+    <img class="mySlides" src="clearlake.jpg"
+    style="width:100%" "height:100%">
+    <img class="mySlides" src="trees.jpg"
+    style="width:100%" "height:100%">
+    <img class="mySlides" src="ponderTeam.png"
+    style="width:100%" "height:100%">
+    <h1 class="a text_over_image w3-jumbo">What is the meaning of life?<br>"Great minds discuss ideas; average minds discuss events; small minds discuss people" -Eleanor Roosevelt</br></h1>
+    <a href="#section1" class="w3-button w3-white w3-padding-large w3-large Center" >Submit Response</a>
+  </section>
+
+
+<script>
+
+
+// Automatic Slideshow - change image every 5 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
+}
+</script>
+
+<!-- Page content -->
+
+<div class="w3-content w3-padding" style="max-width:1564px">
+  <div class="Comments">
+    <?php snippet('Comments') ?>
+  </div>
+  <h1 id="section1">Submit Your Response Here</h1>
+  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+   <div class="container">
+   	<div class="row">
+   	</div>
+
+       <div class="row">
+
+       <div class="col-md-6">
+       						<div class="widget-area no-padding blank">
+   								<div class="status-upload">
+                    <div>
+                    <textarea id="words" name="newData" rows="10" cols="20" style="height:200px;font-size:14pt;width:800px">Enter comment</textarea>
+
+                    <input type="button" onclick="getwords()" value="Enter" /> <br>
+                    <p id="para"></p>
+                    </form>
+
+                    <script type="text/javascript">
+
+                    function getwords() {
+                      text = words.value;
+                      document.getElementById("para").innerHTML += '<p>'+text
+                      document.getElementById("words").value = "enter"
+                    }
+                    </script>
+                    <form action="ponder.php" method="post" action="post">
+                  </div>
+   								</div><!-- Status Upload  -->
+   							</div><!-- Widget Area -->
+   						</div>
+
+       </div>
+   </div>
+</body>
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+
+<!-- Add Google Maps -->
+
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+
+</html>

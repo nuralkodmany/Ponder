@@ -1,0 +1,31 @@
+.header img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background: #225c
+}
+.textarea {
+  width: 500px;
+  height: 300px;
+}
+.center {
+  width: 1060px;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  position: relative;
+}
+
+.text_over_image {
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  color: white;
+  height: 200px;
+
+}
