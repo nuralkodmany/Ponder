@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Ponder</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href ="https://fonts.googleapis.com/css?family=Aclonica|Cormorant+Upright" rel="stylesheet">
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
+    body {
+        font-family: Calibri, sans-serif;
+    }
 
+    .background-wrap {
+      position: absolute;
+      z-index:-1000;
+      width: 100%;
+      height: 100%;
+      white-space: normal;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+    }
 
+    #video-bg-elem {
+        position: fixed;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+    }
 
+    .content {
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        /*z-index: 1000;*/
+    }
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        width: 300px;
+        float: left;
+    }
 
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
 
+    div.gallery img {
+        width: auto;
+        height: auto;
+
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        font-family: 'Cormorant Upright', serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: dark-grey;
+    }
+</style>
+</head>
 <body>
 
 <div class="w3-top" role="navigation" id="wrapper">
@@ -22,12 +81,121 @@
     </div>
   </div>
 </div>
+<div class="background-wrap">
+    <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <source src="resourcesbg.mp4" type="video/mp4">
+        Video not supported
+    </video>
+</div>
+<div class="content">
+<br> </br>
+<br> </br>
+<div class="gallery">
+  <a href="https://suicidepreventionlifeline.org/">
+     <img src="suicideprevention.jpg" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">The National Suicide Prevention Lifeline is a national network of local crisis centers that provides support to people in suicidal crisis or emotional distress 24 hours a day, 7 days a week.</div>
+</div>
+
+<div class="gallery">
+  <a href="http://www.thetrevorproject.org/">
+     <img src="the-trevor-project-logo.jpg" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">The Trevor Project is the leading national organization providing crisis intervention and suicide prevention services to lesbian, gay, bisexual, transgender, and questioning youth.</div>
+</div>
+
+<div class="gallery">
+  <a href="http://www.hrc.org/">
+      <img src="hrc.png" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">As the largest national lesbian, gay, bisexual, transgender and queer civil rights organization, HRC envisions a world where LGBTQ people are ensured of their rights in the community.</div>
+</div>
+
+<div class="gallery">
+  <a href="https://www.aclu.org/">
+      <img src="aclu.png" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">For almost 100 years, the American Civil Liberties Union has worked to defend and preserve the individual rights and liberties guaranteed by the Constitution and laws of the United States.</div>
+</div>
+
+<div class="gallery">
+  <a href="https://www.fmsc.org/">
+      <img src="fmsc.jpg" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">Founded in 1987, Feed My Starving Children (FMSC) is a Christian non-profit that provides nutritionally complete meals specifically formulated for malnourished children.</div>
+</div>
+
+<div class="gallery">
+  <a href="http://www.misericordia.com/">
+      <img src="misericordia.jpg" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">By serving society’s most vulnerable citizens, Misericordia also serves the families who want the best for them, yet cannot provide it at home.</div>
+</div>
+
+<div class="gallery">
+  <a href="https://www.rainn.org/">
+      <img src="rainn.jpg" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">RAINN is the nation's largest anti-sexual violence organization. They prevent sexual violence, help survivors, and ensure that perpetrators are brought to justice. </div>
+</div>
+
+<div class="gallery">
+  <a href="https://girlswhocode.com/">
+      <img src="girlswhocode.jpg" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">The biggest drop off in computer science interest among girls happens between the ages of 13-17, and Girls Who Code was created in order to close that gap.</div>
+</div>
+
+<div class="gallery">
+  <a href="https://oeop.mit.edu/">
+      <img src="oeop.jpg" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">This program focuses on empowering middle and high schoolers from diverse backgrounds to become future scientists and engineers.</div>
+</div>
+
+<div class="gallery">
+  <a href="https://1in6.org/">
+      <img src="1in6.gif" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">The mission of the nonprofit organization 1in6 is to help men who have had unwanted or abusive sexual experiences live healthier, happier lives.</div>
+</div>
+
+<div class="gallery">
+  <a href="http://www.usaeop.com/">
+      <img src="aeop.jpeg" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">Through AEOP, the Army continues its long tradition and strong commitment to the advancement of STEM education and literacy. Their mission is to provide both students and teachers a variety of Army-sponsored STEM programs that inspire the next generation of STEM talent and expose them to DoD STEM careers.</div>
+</div>
+
+<div class="gallery">
+  <a href="http://camp.interlochen.org/program/music/hs/jazz">
+      <img src="campinterlochen.jpg" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">Interlochen was founded in 1928 and is located in beautiful northwest lower Michigan. Each year, thousands of artists and arts patrons come to Interlochen to experience world-class educational and cultural opportunities. Students study music, theatre, visual arts, film, creative writing and dance.</div>
+</div>
+
+<div class="gallery">
+  <a href="https://www.vfw.org/VOD/">
+      <img src="voiceofdemocracy.jpg" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">The Veterans of Foreign Wars Association is dedicated to promoting patriotism and investing in our future generation. If you are a democracy-loving high school student interested in a $30,000 college scholarship or a patriotic middle school student interested in winning $5,000, these scholarships may be for you.</div>
+</div>
+
+<div class="gallery">
+  <a href="https://bluelake.org/">
+      <img src="bluelake.png" alt="HTML tutorial" style="width:300px;height:200px;border:0;">
+  </a>
+  <div class="desc">Blue Lake Fine Arts Camp, a summer school of the arts located on a 1,600 acre campus in Michigan’s Manistee National Forest, offers fine arts education for all ages. Since its inception in 1966, Blue Lake has provided cultural enrichment to more than 300,000 gifted students and countless concert-goers.</div>
+</div>
+</div>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
 
 
-
-<li> </li>
-<li> </li>
-<li> </li>
 <!--<p>Find links to charities for teens, links to crisis hotlines etc (anything that benefits teens):</p>
 <li> http://www.thetrevorproject.org/ (A national 24-hour, toll free confidential suicide hotline for LGBTQ youth) </li>
 <li> http://www.hrc.org/ (The Human Rights Campaign is America's largest civil rights organization working to achieve lesbian, gay, bisexual, transgender and queer equality) </li>
@@ -45,7 +213,7 @@
 <li> The national suicide crisis hotline: 1-800-273-8255 </li>
 <li> Crisis text line: 741741 </li>-->
 
-<a href="https://suicidepreventionlifeline.org/">
+<!--<a href="https://suicidepreventionlifeline.org/">
   <img src="suicideprevention.jpg" alt="HTML tutorial" style="width:250px;height:200px;border:0;">
 </a>
 <a href="http://www.thetrevorproject.org/">
@@ -86,8 +254,8 @@
 </a>
 <a href="https://bluelake.org/  ">
   <img src=bluelake.png alt="HTML tutorial" style="width:250px;height:200px;border:0;">
-</a>
+</a>-->
 </body>
-
+</html>
 
 </html>
