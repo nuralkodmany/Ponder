@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 <link href= "ponder.php">
 <!-- <link rel= "stylesheet" href=ponderqa.css> -->
 <style>
@@ -22,9 +23,28 @@ h1 {
   font-weight: bold;
   color: white;
 }
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+  color: white;
+  position: absolute;
+  left: 170px;
+  top: 450px;
+}
+h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+}
+.button_position {
+  position: absolute;
+  left: 750px;
+  top: 600px;
+}
 </style>
 <body>
-
 
 
 
@@ -44,18 +64,24 @@ h1 {
   <section>
     <!--<img class="mySlides" src="tree.jpg"
     <style="width:100%" "height:100%"> -->
-    <img class="mySlides" src="newponder.jpg"
+  <div class="image_container">
+    <img class="mySlides" src="womanoncliff.jpg"
     style="width:100%" "height:100%">
     <img class="mySlides" src="flowers.jpg"
     style="width:100%" "height:100%">
     <img class="mySlides" src="clearlake.jpg"
     style="width:100%" "height:100%">
+    <img class="mySlides" src="power.jpg"
+    style="width:100%" "height:100%">
     <img class="mySlides" src="trees.jpg"
     style="width:100%" "height:100%">
     <img class="mySlides" src="ponderTeam.png"
     style="width:100%" "height:100%">
-    <h1 class="a text_over_image w3-jumbo">What is the meaning of life?<br>"Great minds discuss ideas; average minds discuss events; small minds discuss people" -Eleanor Roosevelt</br></h1>
-    <a href="#section1" class="w3-button w3-white w3-padding-large w3-large Center" >Submit Response</a>
+    <h1 class="a text_over_image w3-jumbo">Is free will an illusion or a concept that actually exists? Why or why not?</h1>
+    <h2 class="text_over_image">"Great minds discuss ideas; average minds discuss events; small minds discuss people." ~Eleanor Roosevelt</h2>
+    <a href="#section1" class="w3-button w3-white w3-padding-large w3-large button_position">Are you a great mind? Click here!</a>
+  </div>
+</div>
   </section>
 
 
@@ -85,7 +111,7 @@ function carousel() {
   <div class="Comments">
     <?php snippet('Comments') ?>
   </div>
-  <h1 id="section1">Submit Your Response Here</h1>
+  <h3 id="section1">Ponder below:</h3>
   <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
    <div class="container">
    	<div class="row">
@@ -97,7 +123,7 @@ function carousel() {
        						<div class="widget-area no-padding blank">
    								<div class="status-upload">
                     <div>
-                    <textarea id="words" name="newData" rows="10" cols="20" style="height:200px;font-size:14pt;width:800px">Enter comment</textarea>
+                    <textarea id="words" name="newData" rows="50" cols="50" style="height:500px;font-size:16pt;width:1000px"></textarea>
 
                     <input type="button" onclick="getwords()" value="Enter" /> <br>
                     <p id="para"></p>
@@ -129,10 +155,6 @@ function carousel() {
 <!-- Google Map -->
 <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
-</footer>
 
 <!-- Add Google Maps -->
 
